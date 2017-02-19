@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{with .SiteTitle}}<title>{{.}}</title>{{end}}
+        {{with .CSS}}<link href="{{.}}" rel="stylesheet">{{end}}
+    </head>
+    <body>
+        <header>
+        {{with .Logo}}<img src="{{.}}">{{end}}
+        {{with .SiteTitle}}<h1>{{.}}</h1>{{end}}
+        </header>
+        {{with .Nav }}<nav>{{.}}</nav>{{end}}
+        <section>
+        {{with .Title}}<h2>{{.}}</h2>{{end}}
+        {{with .Content}}{{.}}{{end}}
+        </section>
+        {{with .SideBar}}<aside>{{.}}</aside>{{end}}
+        <footer>
+            {{.SiteInfo}} 
+            {{.Copyright}}
+        </footer>
+    </body>
+</html>
