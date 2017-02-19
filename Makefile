@@ -1,10 +1,8 @@
 #
 # Make file for building website
 #
-all:  simple
-
-simple:
-	simple/mk-demo.bash
+all:
+	./mk-simple.bash
 
 status:
 	git status

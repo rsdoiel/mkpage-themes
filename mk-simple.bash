@@ -1,5 +1,7 @@
 #!/bin/bash
 
+START=$(pwd)
+cd $START/simple
 #
 #  # Simple Theme Demo
 #  
@@ -92,3 +94,4 @@ mkpage "Logo=assets/logo.svg" \
     "Nav=nav.md" \
     page.tmpl > page.html
 
+cd $START
