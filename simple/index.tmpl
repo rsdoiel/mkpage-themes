@@ -6,7 +6,7 @@
     </head>
     <body>
         <header>
-        {{with .Logo}}<img src="{{.}}">{{end}}
+        {{with .Logo}}<a href="/">{{.}}</a>{{end}}
         {{with .SiteTitle}}<h1>{{.}}</h1>{{end}}
         </header>
         {{with .Nav }}<nav>{{.}}</nav>{{end}}
@@ -19,7 +19,7 @@
         {{with .SideBar}}<aside>{{.}}</aside>{{end}}
         <footer>
             {{.SiteInfo}} 
-            {{.Copyright}}
+            {{.SiteCopyright}}
         </footer>
     </body>
 </html>
