@@ -22,7 +22,7 @@ and utilities from _mkpage_ project.
 
 ### What you need to get started
 
-+ [mkpage](https://rsdoiel.github.io/mkpage) and download the latest release at [http://github.com/rsdoiel/mkpage/latest/release).
++ [mkpage](https://rsdoiel.github.io/mkpage) and download the latest release at [https://github.com/rsdoiel/mkpage/releases/latest](https://github.com/rsdoiel/mkpage/releases/latest).
 + Bash (available on Linux, Windows, Mac OS X and Raspberry Pis)
 + Your favorite text editor
 + Imagination
