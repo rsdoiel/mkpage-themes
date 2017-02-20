@@ -15,6 +15,7 @@
             <div class="byline">{{.Byline}}</div>
             {{.Article}}
         </section>
+        {{with .SideBar }}<aside>{{.}}</aside>{{end}}
         <footer>
             {{.SiteInfo}} 
             {{.SiteCopyright}}

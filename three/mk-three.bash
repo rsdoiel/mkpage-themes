@@ -71,7 +71,6 @@ done
 #      + .Content
 #      + .Nav
 #  
-echo "Working directory $(pwd)"
 for DOC in page about contact; do 
     Title=$(titleline -i $DOC.md)
     echo "Assembling $DOC.html with title $Title"
@@ -96,8 +95,8 @@ done
 #      + .Title
 #      + .Byline
 #      + .Article
+#      + .SideBar
 #      + .Nav
-echo "Working directory $(pwd)"
 for DOC in article; do
     Title=$(titleline -i $DOC.md)
     Byline=$(byline -i $DOC.md)
@@ -110,6 +109,7 @@ for DOC in article; do
         "Title=markdown:$Title" \
         "Byline=markdown:$Byline" \
         "Article=$DOC.md" \
+        "SideBar=sidebar.md" \
         "Nav=nav.md" \
         article.tmpl > $DOC.html
     git add $DOC.html

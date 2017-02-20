@@ -9,11 +9,11 @@
         {{with .Logo}}{{.}}{{end}}
         {{with .SiteTitle}}<h1>{{.}}</h1>{{end}}
         </header>
+        {{with .Nav }}<nav>{{.}}</nav>{{end}}
         <section>
         {{with .Title}}<h2>{{.}}</h2>{{end}}
         {{with .Content}}{{.}}{{end}}
         </section>
-        {{with .Nav }}<nav>{{.}}</nav>{{end}}
         <footer>
             {{.SiteInfo}} 
             {{.SiteCopyright}}
