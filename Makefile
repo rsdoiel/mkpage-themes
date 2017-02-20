@@ -3,14 +3,14 @@
 #
 all: index.html license.html install.html one three
 
-index.html:
-	mkpage "Content=README.md" "Nav=nav.md" > index.html
+index.html: 
+	mkpage "Content=README.md" "Nav=nav.md" page.tmpl > index.html
 
 license.html:
-	mkpage "Content=LICENSE" "Nav=nav.md" > license.html
+	mkpage "Content=LICENSE" "Nav=nav.md" page.tmpl > license.html
 
 install.html:
-	mkpage "Content=INSTALL.md" "Nav=nav.md" > install.html
+	mkpage "Content=INSTALL.md" "Nav=nav.md" page.tmpl > install.html
 
 one:
 	one/mk-one.bash
