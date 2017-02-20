@@ -9,14 +9,13 @@
         {{with .Logo}}{{.}}{{end}}
         {{with .SiteTitle}}<h1>{{.}}</h1>{{end}}
         </header>
-        {{with .Nav }}<nav>{{.}}</nav>{{end}}
         <section>
         {{with .SiteSlogan}}<h2>{{.}}</h2>{{end}}
         {{with .SiteDescription}}{{.}}{{end}}
-        <p>
-        {{with .ArticleList}}{{.}}{{end}}
+        {{with .Content}}{{.}}{{end}}
+        {{with .ArticleList}}<p>{{.}}{{end}}
         </section>
-        {{with .SideBar}}<aside>{{.}}</aside>{{end}}
+        {{with .Nav }}<nav>{{.}}</nav>{{end}}
         <footer>
             {{.SiteInfo}} 
             {{.SiteCopyright}}

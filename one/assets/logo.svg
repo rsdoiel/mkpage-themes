@@ -1,0 +1,15 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <defs>
+        <linearGradient id="Gradient-1"> 
+        <stop offset="0%" stop-color="#ff0000" /> 
+        <stop offset="100%" stop-color="#aa0000" /> 
+        </linearGradient> 
+        <linearGradient id="Gradient-2"> 
+        <stop offset="0%" stop-color="#00ff00" /> 
+        <stop offset="100%" stop-color="#00aa00" /> 
+        </linearGradient> 
+    </defs> 
+    <rect x="10" y="10" width="75" height="75" fill= "url(#Gradient-1)" stroke="#333333" stroke-width="1px" />
+    <circle cx="60" cy="60" r="20" fill="url(#Gradient-2)" stroke="#888888" stroke-width="1px" />
+</svg>
