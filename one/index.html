@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One Demo</title>
+    <link href="css/site.css" rel="stylesheet" />
+<head>
+<body>
+    <header>
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="Gradient-1"> 
+        <stop offset="0%" stop-color="#ff0000" /> 
+        <stop offset="100%" stop-color="#aa0000" /> 
+        </linearGradient> 
+        <linearGradient id="Gradient-2"> 
+        <stop offset="0%" stop-color="#00ff00" /> 
+        <stop offset="100%" stop-color="#00aa00" /> 
+        </linearGradient> 
+    </defs> 
+    <rect x="1" y="1" width="50" height="50" fill= "url(#Gradient-1)" stroke="#333333" stroke-width="1px" />
+    <circle cx="40" cy="40" r="8" fill="url(#Gradient-2)" stroke="#888888" stroke-width="1px" />
+</svg>
+
+        <h1>One Demo</h1>
+        Small, simple, flexible
+    </header>
+    <nav><ul>
+<li><a href="/">Home</a></li>
+<li><a href="index.html">index</a></li>
+<li><a href="about.html">about</a></li>
+<li><a href="contact.html">contact</a></li>
+</ul>
+</nav>
+    <section><h1>One, builds a minimal design</h1>
+
+<h2>Theme Demo for <em>mkpage</em> projects</h2>
+
+<p>One is a minimal theme. It uses a single page template, CSS file
+an single embeddible SVG file. It demonstrates basic usage of the
+<em>mkpage</em> command in a Bash script (see <a href="mk-one.bash">mk-one.bash</a>).</p>
+
+<p>Site navigation is managed in a Markdown file named <em>nav.md</em>. That
+file renders as a single level UL element. Other markdown files
+hold the main body content of the page.</p>
+
+<p>If you are building a website that fits well into a single page
+then this theme is a good starting point for experimentation.</p>
+
+<h2>The components</h2>
+
+<ol>
+<li>page.tmpl is the template used to render all HTML pages</li>
+<li>css/site.css is the CSS used to define the sites design</li>
+<li>assets/logo.svg is an embeddible logo to demonostrate embedding text formats</li>
+</ol>
+
+<p>The following template variables (replaceable content) are used in the page
+templates.</p>
+
+<ul>
+<li>page.tmpl example output <a href="index.html">index.html</a>
+
+<ul>
+<li>.Logo</li>
+<li>.CSS</li>
+<li>.SiteTitle</li>
+<li>.SiteSlogan</li>
+<li>.SiteInfo</li>
+<li>.SiteCopyright</li>
+<li>.Content</li>
+<li>.Nav</li>
+</ul></li>
+</ul>
+
+<h2>The content</h2>
+
+<p>One includes three pages of content for demonstration purposes</p>
+
+<ol>
+<li>index.md - this page</li>
+<li>contacts.md - an example contacts page</li>
+<li>about.md - an example about page</li>
+</ol>
+</section>
+    <footer>
+    mkpage-themes is a demo of how you might approach 'theming' a mkpage project
+    copyright &copy; 2017 R. S. Doiel, all rights reserved
+    </footer>
+</body>
+</html>

@@ -5,7 +5,7 @@
 
 One is a minimal theme. It uses a single page template, CSS file
 an single embeddible SVG file. It demonstrates basic usage of the
-_mkpage_ command in a Bash script (see [mk-one.bash](mk-one.bash).
+_mkpage_ command in a Bash script (see [mk-one.bash](mk-one.bash)).
 
 Site navigation is managed in a Markdown file named _nav.md_. That
 file renders as a single level UL element. Other markdown files
@@ -25,14 +25,12 @@ templates.
 
 + page.tmpl example output [index.html](index.html)
     + .Logo
+    + .CSS
     + .SiteTitle
     + .SiteSlogan
-    + .SiteDescription
     + .SiteInfo
     + .SiteCopyright
     + .Content
-    + .SideBar
-    + .ArticleList
     + .Nav
 
 ## The content

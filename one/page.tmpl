@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{.title}}</title>
-    <link href="{{ .csspath }}" rel="stylesheet" />
+    <title>{{.SiteTitle}}</title>
+    <link href="{{ .CSS }}" rel="stylesheet" />
 <head>
 <body>
     <header>
-        <h1>{{.title}}</h1>
+        {{with .Logo}}{{.}}{{end}}
+        <h1>{{.SiteTitle}}</h1>
+        {{with .SiteSlogan}}{{.}}{{end}}
     </header>
-    <section>{{.content}}</section>
-    <nav>{{.nav}}</nav>
+    {{with .Nav}}<nav>{{.}}</nav>{{end}}
+    {{with .Content}}<section>{{.}}</section>{{end}}
     <footer>
-    copyright (c) 2017 R. S. Doiel
-    See: <a href="license.html">LICENSE</a>
+    {{with .SiteInfo}}{{.}}{{end}}
+    {{with .SiteCopyright}}{{.}}{{end}}
     </footer>
 </body>
 </html>

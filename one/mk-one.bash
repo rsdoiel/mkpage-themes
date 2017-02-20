@@ -44,5 +44,6 @@ for DOC in index contact about; do
         "Content=$DOC.md" \
         "Nav=nav.md" \
         page.tmpl > $DOC.html
+    git add $DOC.html
 done
 
