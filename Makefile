@@ -18,6 +18,9 @@ install.html:
 	git add install.html
 
 
+publish:
+	./publish.bash
+
 status:
 	git status
 
