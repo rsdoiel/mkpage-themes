@@ -3,7 +3,7 @@
 #
 all: index.html license.html install.html
 	./one/mk-one.bash
-# ./three/mk-three.bash
+	./three/mk-three.bash
 
 index.html: 
 	mkpage "SiteTitle=text:mkpage-themes" "CSS=text:css/site.css" "Content=README.md" "Nav=nav.md" page.tmpl > index.html

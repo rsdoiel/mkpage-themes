@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Three Demo Theme</title>
+        <link href="css/site.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> 
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+    <defs>
+        <linearGradient id="Gradient-1"> 
+        <stop offset="0%" stop-color="#ff0000" /> 
+        <stop offset="100%" stop-color="#aa0000" /> 
+        </linearGradient> 
+        <linearGradient id="Gradient-2"> 
+        <stop offset="0%" stop-color="#00ff00" /> 
+        <stop offset="100%" stop-color="#00aa00" /> 
+        </linearGradient> 
+    </defs> 
+    <rect x="10" y="10" width="75" height="75" fill= "url(#Gradient-1)" stroke="#333333" stroke-width="1px" />
+    <circle cx="60" cy="60" r="20" fill="url(#Gradient-2)" stroke="#888888" stroke-width="1px" />
+</svg>
+
+        <h1>Three Demo Theme</h1>
+        </header>
+        <section>
+        <h2>Three page types, flexible</h2>
+        
+        <h1>Three, small, flexible</h1>
+
+<h2>Theme Demo for <em>mkpage</em> project</h2>
+
+<p>The purpose of this theme is not to illustrate web design but to show
+how you might approach building a <em>mkpage</em> based website with only
+three page types. The theme itself is driven by three Go templates,
+CSS, an embeddable SVG image asset and some markdown content. Site
+navigation, like page content, is built using Markdown. Site navigation
+is defined in <a href="nav.md">nav.md</a> and results in a simple one level
+UL element embedded inside the NAV element of the templated pages.</p>
+
+<p>This theme supports three page types.</p>
+
+<ol>
+<li>index.tmpl for landing pages</li>
+<li>page.tmpl for general purpose pages like about and contact pages</li>
+<li>article.tmpl for articles and blog posts</li>
+</ol>
+
+<p>Navigation is controlled through a <em>nav.md</em> file included
+into each template (i.e. files ending in .tmpl).</p>
+
+<p>The following template variables (replaceable content) are used in the page
+templates.</p>
+
+<ul>
+<li>index.tmpl example output <a href="index.html">index.html</a>
+
+<ul>
+<li>.Logo</li>
+<li>.SiteTitle</li>
+<li>.SiteSlogan</li>
+<li>.SiteDescription</li>
+<li>.SiteInfo</li>
+<li>.SiteCopyright</li>
+<li>.Content</li>
+<li>.ArticleList</li>
+<li>.Nav</li>
+</ul></li>
+<li>page.tmpl example output <a href="page.html">page.html</a>
+
+<ul>
+<li>.Logo</li>
+<li>.SiteTitle</li>
+<li>.SiteSlogan</li>
+<li>.SiteInfo</li>
+<li>.SiteCopyright</li>
+<li>.Content</li>
+<li>.Nav</li>
+</ul></li>
+<li>article.tmpl example output <a href="article.html">article.html</a>
+
+<ul>
+<li>.Logo</li>
+<li>.SiteTitle</li>
+<li>.SiteInfo</li>
+<li>.SiteCopyright</li>
+<li>.Title</li>
+<li>.Byeline</li>
+<li>.Article</li>
+<li>.SideBar</li>
+<li>.Nav</li>
+</ul></li>
+</ul>
+
+        <p><p>Three, small, flexible</p>
+
+        </section>
+        <nav><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="page.html">Page</a></li>
+<li><a href="article.html">Article</a></li>
+</ul>
+</nav>
+        <footer>
+            mkpage-themes is a demo of how you might approach _theming_ a mkpage project 
+            copyright &copy; 2017 R. S. Doiel, all rights reserved
+        </footer>
+    </body>
+</html>

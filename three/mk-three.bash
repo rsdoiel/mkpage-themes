@@ -8,7 +8,7 @@ cd $(dirname $0)
 CSS="css/site.css"
 SiteTitle="Three Demo Theme"
 SiteSlogan="Three page types, flexible"
-SiteInfo="mkpage-themes is a demo of how you might approach 'theming' a mkpage project"
+SiteInfo="mkpage-themes is a demo of how you might approach _theming_ a mkpage project"
 
 SiteDescription=<<EOM
 This is a demonstration of an approach to theming a _mkpage_
@@ -19,8 +19,6 @@ assets.
 EOM
 
 SiteCopyright="copyright &copy; 2017 R. S. Doiel, all rights reserved"
-Title="The parts of a mkpage theme"
-Byline="By $USER $(date +%Y-%m-%d)"
 
 ArticleList=<<EOM
 
@@ -45,18 +43,20 @@ EOM
 #      + .Nav
 echo "Working directory $(pwd)"
 for DOC in index; do
-    echo "Assembling $DOC.html"
+    Title=$(titleline -i $DOC.md)
+    echo "Assembling $DOC.html with title $Title"
     mkpage "Logo=assets/logo.svg" \
         "CSS=text:$CSS" \
         "SiteTitle=text:$SiteTitle" \
+        "Content=$DOC.md" \
         "SiteSlogan=text:$SiteSlogan" \
         "SiteDescription=markdown:$SiteDescription" \
         "SiteInfo=text:$SiteInfo" \
         "SiteCopyright=text:$SiteCopyright" \
         "ArticleList=markdown:$Title" \
-        "Content=$DOC.md" \
         "Nav=nav.md" \
         index.tmpl > $DOC.html
+    git add $DOC.html
 done
 
 #
@@ -73,18 +73,19 @@ done
 #  
 echo "Working directory $(pwd)"
 for DOC in page about contact; do 
-    Title=$(titleline $DOC.md)
+    Title=$(titleline -i $DOC.md)
     echo "Assembling $DOC.html with title $Title"
     mkpage "Logo=assets/logo.svg" \
         "CSS=text:$CSS" \
         "SiteTitle=text:$SiteTitle" \
         "SiteSlogan=text:$SiteSlogan" \
-        "SiteInfo=text:$SiteInfo" \
+        "SiteInfo=markdown:$SiteInfo" \
         "SiteCopyright=text:$SiteCopyright" \
-        "Title=text:$Title" \
-        "Content=$DOC" \
+        "Title=markdown:$Title" \
+        "Content=$DOC.md" \
         "Nav=nav.md" \
         page.tmpl > $DOC.html
+    git add $DOC.html
 done
 
 #  + article.tmpl
@@ -98,18 +99,20 @@ done
 #      + .Nav
 echo "Working directory $(pwd)"
 for DOC in article; do
-    Title=$(titleline $DOC.md)
+    Title=$(titleline -i $DOC.md)
+    Byline=$(byline -i $DOC.md)
     echo "Assembling $DOC.html with title $Title"
     mkpage "Logo=assets/logo.svg" \
         "CSS=text:$CSS" \
         "SiteTitle=text:$SiteTitle" \
-        "SiteInfo=text:$SiteInfo" \
+        "SiteInfo=markdown:$SiteInfo" \
         "SiteCopyright=text:$SiteCopyright" \
-        "Title=text:$Title" \
-        "Byline=text:$Byline" \
+        "Title=markdown:$Title" \
+        "Byline=markdown:$Byline" \
         "Article=$DOC.md" \
         "Nav=nav.md" \
         article.tmpl > $DOC.html
+    git add $DOC.html
 done
 
 cd $START
