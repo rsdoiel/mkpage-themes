@@ -10,34 +10,51 @@
     </header>
     <section><h1>mkpage themes</h1>
 
-<p>This is an experimental demo of how to theme a <em>mkpage</em> based websites.</p>
+<p>This is an experimental demo of how to theme a <em>mkpage</em> based website.
+The goal of this repository isn&rsquo;t to show off great design skills, I don&rsquo;t have
+any.  The goal is to show an approach for implementing portable design, aka theming,
+to websites built with <a href="http://rsdoiel.github.io/mkpage">mkpage</a>.</p>
 
-<h2>What is a <em>mkpage</em> theme?</h2>
-
-<p>A theme is made up of Golang templates, CSS and any media assets such as
-site logo, fonts or other image files required by the theme.</p>
-
-<ul>
-<li>Templates are used to render HTML from data sources produced in Markdown, JSON or plain text</li>
-<li>CSS controls the appearence of the websites produced with these themes</li>
-<li>Images and design related media are also included via an assets folder</li>
-<li>If addition behavior is needed then Javascript files could also be included in a js directory</li>
-</ul>
-
-<p>The goal of this repository isn&rsquo;t to show off great design skills, I don&rsquo;t have
-any.  The goal is to show how you can use <a href="http://rsdoiel.github.io/mkpage">mkpage</a>
-to structure websites simplely and easily with one or more templates, HTML, CSS and
-media assets. <em>mkpage</em> itself is easily scriptable from Bash or your favorite
-scripting language. Each theme demostration is built using a Bash script
-and utilities from <em>mkpage</em> project.</p>
-
-<h3>What you need to get started</h3>
+<h2>What you need to get started</h2>
 
 <ul>
-<li><a href="https://rsdoiel.github.io/mkpage">mkpage</a> and download the latest release at <a href="https://github.com/rsdoiel/mkpage/releases/latest">https://github.com/rsdoiel/mkpage/releases/latest</a>.</li>
-<li>Bash (available on Linux, Windows, Mac OS X and Raspberry Pis)</li>
+<li><a href="https://rsdoiel.github.io/mkpage">mkpage</a>
+
+<ul>
+<li>Download the latest release at <a href="https://github.com/rsdoiel/mkpage/releases/latest">https://github.com/rsdoiel/mkpage/releases/latest</a></li>
+</ul></li>
+<li>Bash</li>
 <li>Your favorite text editor</li>
 <li>Imagination</li>
+</ul>
+
+<h2>What is a theme?</h2>
+
+<p>In the context of web design and websites a theme is a unified set of design elements
+applied to content and used to render a website or page. It suggests a degree of portability
+within the a given content management system (e.g. Wordpress, Drupal or in our
+case <em>mkpage</em>).</p>
+
+<p>A theme system usually manages</p>
+
+<ul>
+<li>HTML templates</li>
+<li>Web assets like CSS, fonts and images associated with the theme</li>
+<li>A mechanism to apply content to appropriate templates in a predictable manner</li>
+</ul>
+
+<h3>What is a <em>mkpage</em> theme?</h3>
+
+<p>In <em>mkpage</em> a theme is made up of at least one Golang template plus any web assets
+like CSS, fonts, images and JavaScript.</p>
+
+<p>Theming in <em>mkpage</em> makes the following assumptions</p>
+
+<ul>
+<li>Templates are used to render HTML from data sources that are formatted as Markdown, JSON or plain text</li>
+<li>CSS, fonts, images controls the appearence of the web page produced from templates</li>
+<li>JavaScript is used for dynamic behavior in the rendered webpage</li>
+<li>A Bash script orchestrates the envocation of the <em>mkpage</em> command which applies content to templates</li>
 </ul>
 
 <h2>Our Theme Experiments</h2>
