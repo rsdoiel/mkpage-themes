@@ -1,31 +1,46 @@
 
 # mkpage themes
 
-This is an experimental demo of how to theme a _mkpage_ based websites.
-
-## What is a _mkpage_ theme?
-
-A theme is made up of Golang templates, CSS and any media assets such as 
-site logo, fonts or other image files required by the theme.
-
-+ Templates are used to render HTML from data sources produced in Markdown, JSON or plain text
-+ CSS controls the appearence of the websites produced with these themes
-+ Images and design related media are also included via an assets folder
-+ If addition behavior is needed then Javascript files could also be included in a js directory
-
+This is an experimental demo of how to theme a _mkpage_ based website.
 The goal of this repository isn't to show off great design skills, I don't have
-any.  The goal is to show how you can use [mkpage](http://rsdoiel.github.io/mkpage)
-to structure websites simplely and easily with one or more templates, HTML, CSS and
-media assets. _mkpage_ itself is easily scriptable from Bash or your favorite
-scripting language. Each theme demostration is built using a Bash script
-and utilities from _mkpage_ project.
+any.  The goal is to show an approach for implementing portable design, aka theming, 
+to websites built with [mkpage](http://rsdoiel.github.io/mkpage).
 
 ### What you need to get started
 
-+ [mkpage](https://rsdoiel.github.io/mkpage) and download the latest release at [https://github.com/rsdoiel/mkpage/releases/latest](https://github.com/rsdoiel/mkpage/releases/latest).
-+ Bash (available on Linux, Windows, Mac OS X and Raspberry Pis)
++ [mkpage](https://rsdoiel.github.io/mkpage)
+    + Download the latest release at https://github.com/rsdoiel/mkpage/releases/latest
++ Bash 
 + Your favorite text editor
 + Imagination
+
+
+## What is a theme?
+
+In the context of web design and websites a theme is a unified set of design elements
+applied to content and used to render a website or page. It suggests a degree of portability
+within the a given content management system (e.g. Wordpress, Drupal or in our
+case _mkpage_).
+
+A theme system usually manages 
+
++ HTML templates
++ Web assets like CSS, fonts and images associated with the theme
++ A mechanism to apply content to appropriate templates in a predictable manner
+
+
+## What is a _mkpage_ theme?
+
+In _mkpage_ a theme is made up of at least one Golang template plus any web assets
+like CSS, fonts, images and JavaScripts.
+
+Theming in _mkpage_ makes the following assumptions
+
++ Templates are used to render HTML from data sources produced in Markdown, JSON or plain text
++ CSS controls the appearence of the web page produced from templates
++ Images, fonts, JavaScript behavior round out the presentation and behaviors of the render webpage
++ A Bash script orchestrates the envocation of the _mkpage_ command which applies content to templates
+
 
 ## Our Theme Experiments
 
