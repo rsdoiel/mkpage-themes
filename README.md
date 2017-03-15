@@ -43,7 +43,7 @@ Theming in _mkpage_ makes the following assumptions
 + A Bash script orchestrates the envocation of the _mkpage_ command which applies content to templates
 
 
-## Our Theme Experiments
+## Our theme experiments
 
 + [one](one/) is a minimal website structure built using a single template, CSS file and image assets.
 + [three](three/) a theme general purpose them with minimal styling supporting three page types
