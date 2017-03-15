@@ -6,7 +6,8 @@ The goal of this repository isn't to show off great design skills, I don't have
 any.  The goal is to show an approach for implementing portable design, aka theming, 
 to websites built with [mkpage](http://rsdoiel.github.io/mkpage).
 
-### What you need to get started
+
+## What you need to get started
 
 + [mkpage](https://rsdoiel.github.io/mkpage)
     + Download the latest release at https://github.com/rsdoiel/mkpage/releases/latest
@@ -29,16 +30,16 @@ A theme system usually manages
 + A mechanism to apply content to appropriate templates in a predictable manner
 
 
-## What is a _mkpage_ theme?
+### What is a _mkpage_ theme?
 
 In _mkpage_ a theme is made up of at least one Golang template plus any web assets
-like CSS, fonts, images and JavaScripts.
+like CSS, fonts, images and JavaScript.
 
 Theming in _mkpage_ makes the following assumptions
 
-+ Templates are used to render HTML from data sources produced in Markdown, JSON or plain text
-+ CSS controls the appearence of the web page produced from templates
-+ Images, fonts, JavaScript behavior round out the presentation and behaviors of the render webpage
++ Templates are used to render HTML from data sources that are formatted as Markdown, JSON or plain text
++ CSS, fonts, images controls the appearence of the web page produced from templates
++ JavaScript is used for dynamic behavior in the rendered webpage
 + A Bash script orchestrates the envocation of the _mkpage_ command which applies content to templates
 
 
