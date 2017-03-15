@@ -82,7 +82,7 @@ nav ul li {
 
 section, article {
     display: block;
-    width: 90%;
+    max-width: 90%;
     height: auto;
     padding: 1.24em;
     margin-top: 1.24em;
@@ -119,6 +119,11 @@ h4 {
     font-weight: lighter;
     font-size: 100%;
     text-transform: lowercase;
+}
+
+header {
+    padding-left: 0.64em;
+    font-size: 1.48em;
 }
 
 footer {
