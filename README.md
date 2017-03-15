@@ -40,7 +40,7 @@ Theming in _mkpage_ makes the following assumptions
 + Templates are used to render HTML from data sources that are formatted as Markdown, JSON or plain text
 + CSS, fonts, images controls the appearence of the web page produced from templates
 + JavaScript is used for dynamic behavior in the rendered webpage
-+ A Bash script orchestrates the envocation of the _mkpage_ command which applies content to templates
++ A Bash script orchestrates the invocation of the _mkpage_ command which applies content to templates
 
 
 ## Our theme experiments
