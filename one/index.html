@@ -31,17 +31,18 @@
 <li><a href="contact.html">contact</a></li>
 </ul>
 </nav>
-    <section><h1>One, builds a minimal design</h1>
+    <section><h1>One, builds on a minimal design</h1>
 
-<h2>Theme Demo for <em>mkpage</em> projects</h2>
+<h2>A Demo Theme for a <em>mkpage</em> project</h2>
 
-<p>One is a minimal theme. It uses a single page template, CSS file
-an single embeddible SVG file. It demonstrates basic usage of the
+<p>One is a minimal theme. It uses a single page template, a CSS file
+and a single embeddible SVG file. It demonstrates basic usage of the
 <em>mkpage</em> command in a Bash script (see <a href="mk-one.bash">mk-one.bash</a>).</p>
 
 <p>Site navigation is managed in a Markdown file named <em>nav.md</em>. That
 file renders as a single level UL element. Other markdown files
-hold the main body content of the page.</p>
+provide the main body content for the three pages of the site
+(index, about, contact).</p>
 
 <p>If you are building a website that fits well into a single page
 then this theme is a good starting point for experimentation.</p>
@@ -51,30 +52,29 @@ then this theme is a good starting point for experimentation.</p>
 <ol>
 <li>page.tmpl is the template used to render all HTML pages</li>
 <li>css/site.css is the CSS used to define the sites design</li>
-<li>assets/logo.svg is an embeddible logo to demonostrate embedding text formats</li>
+<li>assets/logo.svg is an embeddible logo to demonostrate embedding SVG images in HTML</li>
 </ol>
 
-<p>The following template variables (replaceable content) are used in the page
-templates.</p>
+<p>The following template variables (replaceable content) are used.</p>
 
 <ul>
 <li>page.tmpl example output <a href="index.html">index.html</a>
 
 <ul>
-<li>.Logo</li>
-<li>.CSS</li>
-<li>.SiteTitle</li>
-<li>.SiteSlogan</li>
-<li>.SiteInfo</li>
-<li>.SiteCopyright</li>
-<li>.Content</li>
-<li>.Nav</li>
+<li>.Logo - path to the SVG that will be embedded in the HTML</li>
+<li>.CSS - text of path to the CSS file</li>
+<li>.SiteTitle - text of title</li>
+<li>.SiteSlogan - text of site slogan if available</li>
+<li>.SiteInfo - text site info</li>
+<li>.SiteCopyright - text of license info</li>
+<li>.Content - name of markdown file containing the content for the page</li>
+<li>.Nav - name of the markdown file containing site navigation</li>
 </ul></li>
 </ul>
 
 <h2>The content</h2>
 
-<p>One includes three pages of content for demonstration purposes</p>
+<p>This demo site includes three pages of content for demonstration purposes</p>
 
 <ol>
 <li>index.md - this page</li>
